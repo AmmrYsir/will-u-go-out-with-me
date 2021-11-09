@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Will you?</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header id="loading">
+            <div class="relative">
+                <div class="circle"></div>
+            </div>
+        </header>
+        <main>
+            <h1>Hey, <span style="color: white">you &#128527; </span></h1>
+            <img src="img/propose.jpg" alt="" />
+            <p>
+                Will you
+                <span style="color: red">go out with me &#128151;</span>?
+            </p>
+        </main>
+
+        <script>
+            document.onreadystatechange = () => {
+                if (document.readyState === "complete") {
+                    let header = document.querySelector("#loading");
+                    header.classList.add("hidden");
+                }
+            };
+        </script>
+    </body>
+</html>
